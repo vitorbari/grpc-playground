@@ -1,8 +1,10 @@
-`$ mkdir generated`
+## Generating source files from .proto definition
 
-`$ mkdir generated/php`
+`$ mkdir -p generated/php`
 
 `$ protoc customers.proto --php_out=./generated/php`
+
+## Using generated source-code to encode / decode data
 
 `$ php src/php/customers.php | jq .`
 
