@@ -16,11 +16,7 @@ class Customer extends \Google\Protobuf\Internal\Message
      */
     protected $id = 0;
     /**
-     * Generated from protobuf field <code>.Country country = 2;</code>
-     */
-    protected $country = null;
-    /**
-     * Generated from protobuf field <code>string name = 3;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
      */
     protected $name = '';
 
@@ -31,7 +27,6 @@ class Customer extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $id
-     *     @type \Country $country
      *     @type string $name
      * }
      */
@@ -63,39 +58,7 @@ class Customer extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.Country country = 2;</code>
-     * @return \Country|null
-     */
-    public function getCountry()
-    {
-        return isset($this->country) ? $this->country : null;
-    }
-
-    public function hasCountry()
-    {
-        return isset($this->country);
-    }
-
-    public function clearCountry()
-    {
-        unset($this->country);
-    }
-
-    /**
-     * Generated from protobuf field <code>.Country country = 2;</code>
-     * @param \Country $var
-     * @return $this
-     */
-    public function setCountry($var)
-    {
-        GPBUtil::checkMessage($var, \Country::class);
-        $this->country = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string name = 3;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
      * @return string
      */
     public function getName()
@@ -104,7 +67,7 @@ class Customer extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 3;</code>
+     * Generated from protobuf field <code>string name = 2;</code>
      * @param string $var
      * @return $this
      */

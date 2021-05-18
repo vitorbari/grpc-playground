@@ -2,7 +2,7 @@ syntax = "proto3";
 
 message Customer {
     int32 id = 1;
-    string name = 3;
+    string name = 2;
 }
 
 message Customers {
