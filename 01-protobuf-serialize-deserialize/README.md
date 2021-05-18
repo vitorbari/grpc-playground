@@ -24,3 +24,20 @@ Output:
   ]
 }
 ```
+
+## Using protoc --decode_raw
+
+`$ php src/php/serialize-stdout.php | protoc --decode_raw`
+
+Output:
+
+```
+1 {
+  1: 1
+  2: "John"
+}
+1 {
+  1: 2
+  2: "Bob"
+}
+```
