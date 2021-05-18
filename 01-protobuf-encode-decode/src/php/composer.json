@@ -1,0 +1,10 @@
+{
+    "require": {
+        "google/protobuf": "^3.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "../../generated/php"
+        }
+    }
+}
