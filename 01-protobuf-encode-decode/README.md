@@ -1,5 +1,7 @@
 `$ mkdir generated`
+
 `$ mkdir generated/php`
+
 `$ protoc customers.proto --php_out=./generated/php`
 
 `$ php src/php/customers.php | jq .`
