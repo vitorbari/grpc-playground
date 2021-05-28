@@ -24,7 +24,7 @@ $ protoc --go_out=. --go_opt=paths=source_relative \
 
 `$ go run server/server.go`
 
-### Running Server
+### Running Client
 
 `$ go run client/client.go`
 
