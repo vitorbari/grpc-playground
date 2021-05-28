@@ -1,10 +1,14 @@
-## Generating source files from .proto definition
+## 01-protobuf-serialize-deserialize-php
+
+Serializes and deserializes proto messages using PHP.
+
+### Generating source files from .proto definition
 
 `$ mkdir -p generated/php`
 
 `$ protoc customers.proto --php_out=./generated/php`
 
-## Using generated source-code to encode / decode data
+### Using generated source-code to encode / decode data
 
 `$ php src/php/customers.php | jq .`
 
@@ -25,7 +29,7 @@ Output:
 }
 ```
 
-## Using protoc --decode_raw
+### Using protoc --decode_raw
 
 `$ php src/php/serialize-stdout.php | protoc --decode_raw`
 
