@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package calculator;
+option go_package = "github.com/vitorbari/grpc-playground/03-calculator-service-golang-php/calculator";
+
+message Addition {
+  int32 augend = 1;
+  int32 addend = 2;
+}
+
+message AdditionRequest { Addition addition = 1; }
+
+message AdditionResponse { int32 result = 1; }
+
+service CalculatorService {
+  rpc Add(AdditionRequest) returns (AdditionResponse) {};
+}
