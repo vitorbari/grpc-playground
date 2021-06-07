@@ -13,3 +13,18 @@ $ protoc --go_out=server/calculator --go_opt=paths=source_relative \
     --plugin=protoc-gen-grpc=bins/opt/grpc_php_plugin \
     calculator.proto
 ```
+
+
+### Starting Server
+
+`$ cd server && go run main.go`
+
+### Running Client
+
+`$ php client/run.php`
+
+Output:
+
+```
+Response from Calculator RPC: 12
+```
