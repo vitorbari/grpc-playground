@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package calculator;
+option go_package = "github.com/vitorbari/grpc-playground/03-calculator-service-golang-php/calculator";
+
+message PrimeNumberDecompositionRequest { int32 number = 1; }
+
+message PrimeNumberDecompositionResponse { int32 factor = 1; }
+
+service CalculatorService {
+  rpc GetPrimeNumberDecomposition(PrimeNumberDecompositionRequest)
+      returns (stream PrimeNumberDecompositionResponse) {};
+}
