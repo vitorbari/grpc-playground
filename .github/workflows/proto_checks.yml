@@ -1,0 +1,14 @@
+name: proto_checks
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: wizhi/setup-buf@v1
+        with:
+          version: 0.32.0
+      # - run: buf check lint
+      - run: buf ls-files
