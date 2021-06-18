@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package calculator;
-option go_package = "github.com/vitorbari/grpc-playground/03-calculator-service-golang-php/calculator";
+option go_package = "github.com/vitorbari/grpc-playground/05-prime-number-decomposition-server-streaming-golang-php/calculator";
 
 message PrimeNumberDecompositionRequest { int32 number = 1; }
 
