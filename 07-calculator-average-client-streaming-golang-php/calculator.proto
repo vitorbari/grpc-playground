@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package calculator;
+option go_package = "github.com/vitorbari/grpc-playground/07-calculator-average-client-streaming-golang-php/calculator";
+
+message AverageRequest { int32 number = 1; }
+
+message AverageResponse { double result = 1; }
+
+service CalculatorService {
+  rpc Average(stream AverageRequest) returns (AverageResponse) {};
+}
