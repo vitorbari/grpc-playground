@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package calculator;
+option go_package = "github.com/vitorbari/grpc-playground/09-calculator-maximum-bi-directional-streaming-golang-php/calculator";
+
+message MaximumRequest { int32 number = 1; }
+
+message MaximumResponse { int32 maximum = 1; }
+
+service CalculatorService {
+  rpc Maximum(stream MaximumRequest) returns (stream MaximumResponse) {};
+}

@@ -1,0 +1,12 @@
+{
+    "require": {
+        "ext-grpc": "*",
+        "google/protobuf": "^3.17",
+        "grpc/grpc": "^1.38"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "./calculator"
+        }
+    }
+}
