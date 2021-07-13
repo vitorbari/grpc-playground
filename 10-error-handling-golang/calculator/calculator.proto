@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package calculator;
+option go_package = "github.com/vitorbari/grpc-playground/10-error-handling-golang/calculator";
+
+message SquareRootRequest {int32 radicand = 1;}
+
+message SquareRootResponse {double result = 1;}
+
+service CalculatorService {
+  rpc SquareRoot(SquareRootRequest) returns (SquareRootResponse) {};
+}
