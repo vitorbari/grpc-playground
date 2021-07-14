@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package calculator;
+option go_package = "github.com/vitorbari/grpc-playground/11-calculator-with-deadline-golang-php/calculator";
+
+message FactorialRequest { uint32 number = 1; }
+
+message FactorialResponse { uint64 result = 1; }
+
+service CalculatorService {
+  rpc Factorial(FactorialRequest) returns (FactorialResponse) {};
+}
