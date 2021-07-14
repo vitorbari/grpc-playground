@@ -28,7 +28,7 @@ func (s server) Factorial(ctx context.Context, request *calculator.FactorialRequ
 			return nil, status.Error(codes.Canceled, "Client cancelled, abandoning.")
 		}
 		// Need to make it even slower
-		time.Sleep(time.Microsecond * time.Duration(100 * int(i)))
+		time.Sleep(time.Millisecond * 300)
 		r *= i
 	}
 

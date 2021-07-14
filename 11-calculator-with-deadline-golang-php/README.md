@@ -34,9 +34,9 @@ Factorial of 3 = 6
 Factorial of 4 = 24
 Factorial of 5 = 120
 Factorial of 6 = 720
-Error when calculating the factorial of: 7. Error: 4, Deadline Exceeded
-Error when calculating the factorial of: 8. Error: 4, Deadline Exceeded
-Error when calculating the factorial of: 9. Error: 4, Deadline Exceeded
+Factorial of 7 = 5040
+Factorial of 8 = 40320
+Factorial of 9 = 362880
 Error when calculating the factorial of: 10. Error: 4, Deadline Exceeded
 Error when calculating the factorial of: 11. Error: 4, Deadline Exceeded
 Error when calculating the factorial of: 12. Error: 4, Deadline Exceeded
