@@ -30,3 +30,4 @@ Here you can find the labs organized by different criterias:
 Topics to cover:
 
 - Middlewares: https://github.com/grpc-ecosystem/go-grpc-middleware
+- gRPC-Gateway: https://github.com/grpc-ecosystem/grpc-gateway
