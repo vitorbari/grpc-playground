@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package blog;
+option go_package = "github.com/vitorbari/grpc-playground/13-crud-api-mongodb-golang/blogpb";
+
+message Blog {
+  string id = 1;
+  string author_id = 2;
+  string title = 3;
+  string content = 4;
+}
+
+message CreateBlogRequest {
+  Blog blog = 1;
+}
+
+message CreateBlogResponse {
+  Blog blog = 1;
+}
+
+message ReadBlogRequest {
+  string blog_id = 1;
+}
+
+message ReadBlogResponse {
+  Blog blog = 1;
+}
+
+message UpdateBlogRequest {
+  Blog blog = 1;
+}
+
+message UpdateBlogResponse {
+  Blog blog = 1;
+}
+
+message DeleteBlogRequest {
+  string blog_id = 1;
+}
+
+message DeleteBlogResponse {
+  string blog_id = 1;
+}
+
+message ListBlogsRequest {
+}
+
+message ListBlogsResponse {
+  Blog blog = 1;
+}
+
+service BlogService {
+  rpc CreateBlog (CreateBlogRequest) returns (CreateBlogResponse);
+  // return NOT_FOUND if not found
+  rpc ReadBlog (ReadBlogRequest) returns (ReadBlogResponse);
+  // return NOT_FOUND if not found
+  rpc UpdateBlog (UpdateBlogRequest) returns (UpdateBlogResponse);
+  // return NOT_FOUND if not found
+  rpc DeleteBlog (DeleteBlogRequest) returns (DeleteBlogResponse);
+  rpc ListBlogs (ListBlogsRequest) returns (stream ListBlogsResponse);
+}
