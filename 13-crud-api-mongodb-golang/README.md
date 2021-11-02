@@ -1,6 +1,6 @@
 ## 13-crud-api-mongodb-golang
 
-Implements a gRPC server to expose CRUD operations for a blog. 
+Implements a gRPC server to expose CRUD operations for a blog. Uses Golang and MongoDB.
 
 ### Installing the protocol compiler plugins for Go
 
